@@ -1,0 +1,22 @@
+package com.gmail.alverill;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Network myNet = new Network("My Net!");
+		Phone ph1 = new Phone(123456, "Paraphone","Cool phone1", "Bob" );
+		Phone ph2 = new Phone(345678, "Paraphone","Cool phone2", "Sam" );
+		Phone ph3 = new Phone(345621, "Paraphone","Cool phone1", "Cate" );
+		Phone ph4 = new Phone(234561, "Paraphone","Cool phone3", "Suse" );
+		
+		ph1.reg(myNet);
+		ph2.reg(myNet);
+		ph3.reg(myNet);
+		ph4.reg(myNet);
+		
+		myNet.listPhones();
+
+	}
+
+}

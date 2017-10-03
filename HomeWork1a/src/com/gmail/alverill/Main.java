@@ -1,0 +1,19 @@
+package com.gmail.alverill;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cat vaska = new Cat("Vaska", 2, 1.5, true);
+		Cat phil = new Cat("Phill", 3, 3, false);
+		Cat mashka = new Cat("Mashka", 1, 1.5, false);
+		
+		mashka.setHomeCat(true);
+		
+		System.out.println(vaska);
+		System.out.println(phil);
+		System.out.println(mashka);
+
+	}
+
+}

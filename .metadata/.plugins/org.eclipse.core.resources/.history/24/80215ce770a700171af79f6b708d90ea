@@ -1,0 +1,14 @@
+package com.gmail.alverill;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Triangle tr =new Triangle(4, 4, 5);
+		
+		double x = 1/2;
+		System.out.println(x);
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.gmail.alverill;
+
+public class Triangle {
+	private double a;
+	private double b;
+	private double c;
+	private double h;
+	private double p;
+
+	public Triangle(double a, double b, double c) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.c = c;
+
+	}
+
+	public double getS() {
+		if (a + b > c && a + c > b && b + c > a) {
+			p = (a + b + c) / 2.0;
+			h = (2.0 * Math.sqrt(p * (p - a) * (p - b) * (p - c))) / a;
+			double s = 1 / 2.0 * (a * h);
+			return s;
+		} else {
+			return -1.0;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Triangle " + " [a=" + a + ", b=" + b + ", c=" + c + " and S=" + getS() + "]";
+	}
+
+}

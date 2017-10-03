@@ -1,0 +1,56 @@
+package com.gmail.alverill;
+
+import java.util.ArrayList;
+
+public class Network {
+	private String name;
+	private ArrayList<Phone> phoneArray = new ArrayList<Phone>();
+
+	public Network(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void phoneAdd(Phone phone) {
+		if (phoneArray.isEmpty()) {
+			phoneArray.add(phone);
+			System.out.println("Done!");
+		} else {
+			for (Phone p : phoneArray) {
+				System.out.println("test2");
+				if (phone.getNumber() == p.getNumber()) {
+					System.out.println("Allready registered!");
+				} else {
+					phoneArray.add(phone);
+					System.out.println("Done!");
+
+				}
+			}
+		}
+
+	}
+
+	public String phoneInNetwork(int number) {
+		String s = "";
+		for (Phone p : phoneArray) {
+			if (number == p.getNumber()) {
+				s = p.getOwner();
+				break;
+			}
+		}
+		return s;
+
+	}
+
+	public void listPhones() {
+		for (Phone p : phoneArray) {
+			System.out.println(p);
+		}
+		;
+	}
+
+}
