@@ -1,9 +1,9 @@
 package com.gmail.alverill;
 
 public class Triangle extends Shape {
-	Point p1 = new Point(0, 0);
-	Point p2 = new Point(0, 0);
-	Point p3 = new Point(0, 0);
+	private Point p1 = new Point(0, 0);
+	private Point p2 = new Point(0, 0);
+	private Point p3 = new Point(0, 0);
 
 	private double a = Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2));
 	private double b = Math.sqrt(Math.pow((p1.x - p3.x), 2) + Math.pow((p1.y - p3.y), 2));

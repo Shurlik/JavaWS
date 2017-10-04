@@ -1,10 +1,10 @@
 package com.gmail.alverill;
 
 public class Square extends Shape {
-	Point p1 = new Point(0, 0);
-	Point p2 = new Point(0, 0);
-	Point p3 = new Point(0, 0);
-	Point p4 = new Point(0, 0);
+	private Point p1 = new Point(0, 0);
+	private Point p2 = new Point(0, 0);
+	private Point p3 = new Point(0, 0);
+	private Point p4 = new Point(0, 0);
 
 	private double b;
 	private double c;
