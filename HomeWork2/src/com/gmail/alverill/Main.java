@@ -15,6 +15,7 @@ public class Main {
 		
 		d.remForm(4);
 		d.remForm(3);
+		d.getInfo();
 		
 
 	}
