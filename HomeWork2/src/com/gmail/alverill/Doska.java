@@ -7,20 +7,28 @@ public class Doska {
 	private Shape[] sh = new Shape[4];
 
 	public void addForm(int a, Shape s) {
-		a -= 1;
-		sh[a] = s;
-		System.out.println(s +" added to part " + (a+1));
+		if (1 < a && a > 4) {
+			System.out.println("Please, enter the number from 1 to 4 next time.");
+		} else {
+			a -= 1;
+			sh[a] = s;
+			System.out.println(s + " added to part " + (a + 1));
+		}
 	}
 
 	public void remForm(int i) {
-		i-=1;
-		if (sh[i] != null) {
-			sh[i]=null;
-			System.out.println("Figure from part "+(i+1)+" removed.");
+		if (1 < i && i > 4) {
+			System.out.println("Please, enter the number from 1 to 4 next time.");
 		} else {
-			System.out.println("Empty place.");
+			i -= 1;
+			if (sh[i] != null) {
+				sh[i] = null;
+				System.out.println("Figure from part " + (i + 1) + " removed.");
+			} else {
+				System.out.println("Empty place.");
+			}
 		}
-		
+
 	}
 
 	public void getInfo() {

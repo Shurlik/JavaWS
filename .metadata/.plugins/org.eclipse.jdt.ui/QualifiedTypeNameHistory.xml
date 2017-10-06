@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.gmail.alverill.Network"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.gmail.alverill.Rectangle"/>
+<fullyQualifiedTypeName name="com.gmail.alverill.Triangle"/>
+<fullyQualifiedTypeName name="com.gmail.alverill.Square"/>
+</qualifiedTypeNameHistroy>

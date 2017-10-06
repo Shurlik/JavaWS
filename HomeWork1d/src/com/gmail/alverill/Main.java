@@ -15,10 +15,12 @@ public class Main {
 		ph3.reg(myNet);
 		ph4.reg(myNet);
 		
-		myNet.listPhones();
+		
 		
 		ph1.call(myNet, 3451678);
-		//System.out.println(myNet.getName());
+		
+		myNet.listPhones();
+
 
 	}
 

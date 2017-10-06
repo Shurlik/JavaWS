@@ -37,7 +37,7 @@ public class Network {
 		for (Phone p : phoneArray) {
 			System.out.println(p);
 		}
-		;
+		
 	}
 
 }
