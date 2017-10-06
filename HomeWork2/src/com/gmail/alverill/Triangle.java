@@ -40,16 +40,6 @@ public class Triangle extends Shape {
 		return side;
 	}
 
-	public void getNums() {
-		System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + x3 + " " + y3);
-	}
-
-	public void getPoints() {
-		System.out.println("P1 = x:" + this.p1.getX() + " y:" + this.p1.getY());
-		System.out.println("P2 = x:" + this.p2.getX() + " y:" + this.p2.getY());
-		System.out.println("P3 = x:" + this.p3.getX() + " y:" + this.p3.getY());
-	}
-
 	@Override
 	public double getPerimetr() {
 		double p = (a + b + c) / 2.0;
