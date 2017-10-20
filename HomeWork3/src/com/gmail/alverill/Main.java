@@ -12,7 +12,7 @@ public class Main {
 		Student hum6 = new Student("Pi2", "Parker2", 18, "KPI", "inform");
 		Student hum7 = new Student("Don3","Joe3",25, "KPI", "inform");
 		Student hum8 = new Student("Pi3", "Parker3", 18, "KPI", "inform");
-		Student hum9 = new Student("Don4","Joe4",25, "KPI", "inform");
+		Student hum9 = null;
 		Student hum10 = new Student("Pi4", "Parker4", 18, "KPI", "inform");
 		Student hum11 = new Student("Don5","Joe5",25, "KPI", "inform");
 		Student hum12 = new Student("Pi5", "Parker5", 18, "KPI", "inform");

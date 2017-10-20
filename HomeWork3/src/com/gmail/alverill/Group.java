@@ -4,13 +4,12 @@ import java.util.Arrays;
 
 public class Group {
 	private String groupName;
+	private Student[] studentGroup = new Student[10];
 
 	public Group(String groupName) {
 		super();
 		this.groupName = groupName;
 	}
-
-	private Student[] studentGroup = new Student[10];
 
 	public void getInfo() {
 		for (Student student : studentGroup) {
@@ -34,11 +33,14 @@ public class Group {
 	}
 
 	public void addStudent(Student student) throws FullGroupException {
+		if (student == null) {
+			System.out.println("Cant add 'null' to the group.");
+		}
 		if (!groupSize()) {
 			throw new FullGroupException();
 		} else {
 			for (int i = 0; i < studentGroup.length; i += 1) {
-				if (studentGroup[i] == null) {
+				if (studentGroup[i] == null && student != null) {
 					studentGroup[i] = student;
 					System.out.println("Student " + student.getFirstName() + " " + student.getSecondName()
 							+ " successfully added to group " + this.groupName + ".");
@@ -50,7 +52,7 @@ public class Group {
 
 	public void remStudent(String firstName) {
 		for (int i = 0; i < studentGroup.length; i += 1) {
-			if (studentGroup[i] != null && studentGroup[i].getFirstName() == firstName) {
+			if (studentGroup[i] != null && studentGroup[i].getFirstName().equals(firstName)) {
 				System.out.print("The " + studentGroup[i].getFirstName() + " " + studentGroup[i].getSecondName()
 						+ " from group " + this.groupName + "...");
 				studentGroup[i] = null;
@@ -69,7 +71,7 @@ public class Group {
 
 	public void findStudent(String firstName) {
 		for (int i = 0; i < studentGroup.length; i += 1) {
-			if (studentGroup[i] != null && studentGroup[i].getFirstName() == firstName) {
+			if (studentGroup[i] != null && studentGroup[i].getFirstName().equals(firstName)) {
 				System.out.println("Yes, the " + studentGroup[i].getFirstName() + " " + studentGroup[i].getSecondName()
 						+ " in group " + this.groupName + ".");
 				break;
@@ -81,6 +83,17 @@ public class Group {
 			}
 
 		}
+	}
+
+	public Student getStudent(String firstName) {
+		Student student = null;
+		for (int i = 0; i < studentGroup.length; i += 1) {
+			if (studentGroup[i] != null && studentGroup[i].getFirstName().equals(firstName)) {
+				student = studentGroup[i];
+			}
+		}
+		return student;
+
 	}
 
 	@Override
