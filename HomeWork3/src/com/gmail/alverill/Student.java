@@ -1,5 +1,4 @@
 package com.gmail.alverill;
-
 public class Student extends Human {
 	private String univer;
 	private String faculty;
